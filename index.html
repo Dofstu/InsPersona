@@ -1,0 +1,1473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Inspersona - AI Learning Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Loading Screen -->
+<div id="loadingScreen" class="screen-overlay">
+  <div class="loading-content">
+    <div class="loading-spinner"></div>
+    <h2 class="loading-title">AI is preparing your files...</h2>
+    <p class="loading-subtitle">This may take a few moments</p>
+    <div class="loading-progress">
+      <div class="loading-progress-bar"></div>
+    </div>
+    <div class="loading-steps">
+      <div class="loading-step active">
+        <span class="step-icon">📄</span>
+        <span class="step-text">Analyzing document</span>
+        <span class="step-indicator">⚡</span>
+      </div>
+      <div class="loading-step">
+        <span class="step-icon">🤖</span>
+        <span class="step-text">Generating questions</span>
+        <span class="step-indicator">⚡</span>
+      </div>
+      <div class="loading-step">
+        <span class="step-icon">🎯</span>
+        <span class="step-text">Optimizing content</span>
+        <span class="step-indicator">⚡</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Welcome/Home Section -->
+<div id="homeSection" class="section active home-section">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <div class="hero-logo-large">
+        <div class="logo-ring"></div>
+        <div class="logo-center">I</div>
+      </div>
+      <h1 class="hero-title">Welcome to <span class="gradient-text">Inspersona</span></h1>
+      <p class="hero-subtitle">Transform your learning experience with AI-powered quizzes, power-ups, and gamification</p>
+      <button class="btn-hero" id="startLearningHero">
+        <span class="btn-hero-icon">🚀</span>
+        Start Learning Now
+        <span class="btn-hero-arrow">→</span>
+      </button>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features-section">
+    <div class="section-header">
+      <h2 class="section-title">Why Choose Inspersona?</h2>
+      <p class="section-subtitle">Discover the features that make learning exciting and effective</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🧠 </div>
+        </div>
+        <h3 class="feature-title">AI-Powered Quizzes</h3>
+        <p class="feature-description">Upload your materials and get intelligent, adaptive quizzes tailored to your learning needs</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">⚡</div>
+        </div>
+        <h3 class="feature-title">Power-Up System</h3>
+        <p class="feature-description">Use strategic power-ups like 50/50, Time Freeze, Skip, and Double Points to maximize your score</p>
+        <div class="powerup-showcase">
+          <span class="mini-powerup">🏓</span>
+          <span class="mini-powerup">⏰</span>
+          <span class="mini-powerup">⭐</span>
+          <span class="mini-powerup">💎</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🌳</div>
+        </div>
+        <h3 class="feature-title">Skill Tree & Achievements</h3>
+        <p class="feature-description">Unlock powerful bonuses and track your progress with achievements and skill points</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🎮</div>
+        </div>
+        <h3 class="feature-title">Multiplayer Mode</h3>
+        <p class="feature-description">Create or join quiz games and compete with friends in real-time leaderboards</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🏆</div>
+        </div>
+        <h3 class="feature-title">Global Leaderboard</h3>
+        <p class="feature-description">Compete with players worldwide and climb to the top of the rankings</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">📊</div>
+        </div>
+        <h3 class="feature-title">Progress Tracking</h3>
+        <p class="feature-description">Monitor your accuracy, streaks, and performance with detailed statistics</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div class="how-it-works-section">
+    <div class="section-header">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Get started in three simple steps</p>
+    </div>
+
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon">📤</div>
+        <h3 class="step-title">Upload Your Material</h3>
+        <p class="step-description">Upload PDFs, Word docs, or PowerPoint files with your learning content</p>
+      </div>
+
+      <div class="step-arrow">→</div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon">⚙️</div>
+        <h3 class="step-title">Configure Your Quiz</h3>
+        <p class="step-description">Choose difficulty, time limits, and question types to match your style</p>
+      </div>
+
+      <div class="step-arrow">→</div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon">🏓</div>
+        <h3 class="step-title">Learn & Compete</h3>
+        <p class="step-description">Answer questions, use power-ups, and earn skill points to unlock bonuses</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <div class="cta-content">
+      <h2 class="cta-title">Ready to Level Up Your Learning?</h2>
+      <p class="cta-subtitle">Join thousands of learners achieving their goals with Inspersona</p>
+      <button class="btn-cta" id="startLearningCTA">
+        Get Started Free
+        <span class="btn-cta-icon">🚀</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="main-nav" id="mainNav">
+  <div class="nav-brand" id="navBrandHome">
+    <div class="nav-logo">I</div>
+    <span class="nav-title">Inspersona</span>
+  </div>
+   <div class="nav-buttons">
+    <button class="nav-btn" id="navDashboard">📈 Dashboard</button>
+    <button class="nav-btn" id="navLearn">📊 Learn</button>
+    <button class="nav-btn" id="navQuiz">🎮 Quiz Game</button>
+    <button class="nav-btn" id="navSkillTree">🌳 Skills</button>
+    <button class="nav-btn" id="navLeaderboard">🏆 Leaderboard</button>
+  </div>
+</nav>
+
+<!-- Dashboard Section -->
+<div id="dashboardSection" class="section">
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+  <h1>📈 Your Learning Dashboard</h1>
+  <p>Track your progress and insights</p>
+  <button class="btn-dashboard-info" id="dashboardInfoBtn">ℹ️ About Dashboard</button>
+</div>
+
+    <!-- Quick Stats Grid -->
+    <div class="stats-overview-grid">
+      <div class="stat-overview-card primary">
+        <div class="stat-overview-icon">🎯</div>
+        <div class="stat-overview-content">
+          <div class="stat-overview-value" id="totalQuizzesTaken">0</div>
+          <div class="stat-overview-label">Quizzes Completed</div>
+        </div>
+      </div>
+
+      <div class="stat-overview-card success">
+        <div class="stat-overview-icon">⭐</div>
+        <div class="stat-overview-content">
+          <div class="stat-overview-value" id="averageScore">0%</div>
+          <div class="stat-overview-label">Average Accuracy</div>
+        </div>
+      </div>
+
+      <div class="stat-overview-card accent">
+        <div class="stat-overview-icon">⏱️</div>
+        <div class="stat-overview-content">
+          <div class="stat-overview-value" id="totalStudyTime">0h 0m</div>
+          <div class="stat-overview-label">Total Study Time</div>
+        </div>
+      </div>
+
+      <div class="stat-overview-card gold">
+        <div class="stat-overview-icon">🏅</div>
+        <div class="stat-overview-content">
+          <div class="stat-overview-value" id="achievementsUnlocked">0/29</div>
+          <div class="stat-overview-label">Achievements</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="dashboard-two-column">
+      <!-- Left Column -->
+      <div class="dashboard-left-column">
+        <!-- Learning Streak -->
+        <div class="dashboard-card streak-card">
+          <div class="card-header-dash">
+            <h2>🔥 Learning Streak</h2>
+          </div>
+          <div class="streak-content">
+            <div class="streak-display-large">
+              <div class="streak-number" id="currentStreak">0</div>
+              <div class="streak-label">Day Streak</div>
+            </div>
+            <div class="streak-calendar" id="streakCalendar">
+              <!-- Calendar will be generated here -->
+            </div>
+            <div class="streak-message" id="streakMessage">
+              Start your learning journey today! 🚀
+            </div>
+          </div>
+        </div>
+
+        <!-- Today's Activity -->
+        <div class="dashboard-card">
+          <div class="card-header-dash">
+            <h2>📅 Today's Activity</h2>
+          </div>
+          <div class="today-stats-grid">
+            <div class="today-stat">
+              <div class="today-stat-icon">📚</div>
+              <div class="today-stat-value" id="todayQuizzes">0</div>
+              <div class="today-stat-label">Quizzes</div>
+            </div>
+            <div class="today-stat">
+              <div class="today-stat-icon">⏰</div>
+              <div class="today-stat-value" id="todayTime">0m</div>
+              <div class="today-stat-label">Study Time</div>
+            </div>
+            <div class="today-stat">
+              <div class="today-stat-icon">✅</div>
+              <div class="today-stat-value" id="todayAccuracy">0%</div>
+              <div class="today-stat-label">Accuracy</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weak Areas -->
+        <div class="dashboard-card weak-areas-card">
+          <div class="card-header-dash">
+            <h2>📉 Areas for Improvement</h2>
+            <p class="card-subtitle">Focus on these topics to improve</p>
+          </div>
+          <div class="weak-areas-list" id="weakAreasList">
+            <div class="weak-area-item">
+              <div class="weak-area-info">
+                <div class="weak-area-icon">🌍</div>
+                <div>
+                  <div class="weak-area-topic">Geography</div>
+                  <div class="weak-area-stats">5 questions • 60% accuracy</div>
+                </div>
+              </div>
+              <div class="weak-area-action">
+                <button class="btn-practice-weak">Practice</button>
+              </div>
+            </div>
+            <div class="weak-area-item">
+              <div class="weak-area-info">
+                <div class="weak-area-icon">🔬</div>
+                <div>
+                  <div class="weak-area-topic">Science</div>
+                  <div class="weak-area-stats">8 questions • 65% accuracy</div>
+                </div>
+              </div>
+              <div class="weak-area-action">
+                <button class="btn-practice-weak">Practice</button>
+              </div>
+            </div>
+            <div class="weak-area-item">
+              <div class="weak-area-info">
+                <div class="weak-area-icon">📐</div>
+                <div>
+                  <div class="weak-area-topic">Math</div>
+                  <div class="weak-area-stats">3 questions • 67% accuracy</div>
+                </div>
+              </div>
+              <div class="weak-area-action">
+                <button class="btn-practice-weak">Practice</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="dashboard-right-column">
+        <!-- Recent Activities -->
+        <div class="dashboard-card">
+          <div class="card-header-dash">
+            <h2>📋 Recent Activities</h2>
+          </div>
+          <div class="activities-list" id="activitiesList">
+            <div class="activity-item">
+              <div class="activity-icon quiz-activity">🎯</div>
+              <div class="activity-details">
+                <div class="activity-title">Completed Quiz</div>
+                <div class="activity-meta">Geography • 8/10 correct</div>
+                <div class="activity-time">2 hours ago</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon upload-activity">📄</div>
+              <div class="activity-details">
+                <div class="activity-title">Uploaded File</div>
+                <div class="activity-meta">biology_notes.pdf</div>
+                <div class="activity-time">5 hours ago</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon achievement-activity">🏆</div>
+              <div class="activity-details">
+                <div class="activity-title">Achievement Unlocked</div>
+                <div class="activity-meta">First Steps • +10 SP</div>
+                <div class="activity-time">1 day ago</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon quiz-activity">🎯</div>
+              <div class="activity-details">
+                <div class="activity-title">Completed Quiz</div>
+                <div class="activity-meta">Science • 9/10 correct</div>
+                <div class="activity-time">1 day ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- File Learning Progress -->
+        <div class="dashboard-card files-progress-card">
+          <div class="card-header-dash">
+            <h2>📁 File Learning Progress</h2>
+            <p class="card-subtitle">AI-powered insights from your uploads</p>
+          </div>
+          <div class="files-list" id="filesList">
+            <div class="file-progress-item">
+              <div class="file-progress-header">
+                <div class="file-icon">📄</div>
+                <div class="file-info">
+                  <div class="file-name">biology_notes.pdf</div>
+                  <div class="file-meta">Uploaded 5 hours ago</div>
+                </div>
+              </div>
+              <div class="file-progress-bar-container">
+                <div class="file-progress-bar" style="width: 75%"></div>
+              </div>
+              <div class="file-progress-stats">
+                <span>75% mastered</span>
+                <span>15 concepts learned</span>
+              </div>
+              <div class="file-insights">
+                <div class="insight-tag">🧬 Cell Biology</div>
+                <div class="insight-tag">🔬 Genetics</div>
+                <div class="insight-tag">⚡ Strong Area</div>
+              </div>
+            </div>
+
+            <div class="file-progress-item">
+              <div class="file-progress-header">
+                <div class="file-icon">📊</div>
+                <div class="file-info">
+                  <div class="file-name">history_chapter_3.pptx</div>
+                  <div class="file-meta">Uploaded 2 days ago</div>
+                </div>
+              </div>
+              <div class="file-progress-bar-container">
+                <div class="file-progress-bar" style="width: 45%"></div>
+              </div>
+              <div class="file-progress-stats">
+                <span>45% mastered</span>
+                <span>8 concepts learned</span>
+              </div>
+              <div class="file-insights">
+                <div class="insight-tag">🏛️ Ancient Rome</div>
+                <div class="insight-tag">⚔️ Wars & Battles</div>
+                <div class="insight-tag">⚠️ Needs Review</div>
+              </div>
+            </div>
+
+            <div class="file-progress-item">
+              <div class="file-progress-header">
+                <div class="file-icon">📝</div>
+                <div class="file-info">
+                  <div class="file-name">math_equations.docx</div>
+                  <div class="file-meta">Uploaded 3 days ago</div>
+                </div>
+              </div>
+              <div class="file-progress-bar-container">
+                <div class="file-progress-bar" style="width: 90%"></div>
+              </div>
+              <div class="file-progress-stats">
+                <span>90% mastered</span>
+                <span>22 concepts learned</span>
+              </div>
+              <div class="file-insights">
+                <div class="insight-tag">📐 Algebra</div>
+                <div class="insight-tag">📈 Calculus</div>
+                <div class="insight-tag">🌟 Mastered</div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-view-all-files">View All Files</button>
+        </div>
+
+        <!-- Performance Chart -->
+        <div class="dashboard-card">
+          <div class="card-header-dash">
+            <h2>📊 Performance Trend</h2>
+            <p class="card-subtitle">Last 7 days</p>
+          </div>
+          <div class="performance-chart">
+            <div class="chart-bars">
+              <div class="chart-bar" style="height: 60%"><span>Mon</span><div class="bar-value">60%</div></div>
+              <div class="chart-bar" style="height: 75%"><span>Tue</span><div class="bar-value">75%</div></div>
+              <div class="chart-bar" style="height: 55%"><span>Wed</span><div class="bar-value">55%</div></div>
+              <div class="chart-bar" style="height: 85%"><span>Thu</span><div class="bar-value">85%</div></div>
+              <div class="chart-bar" style="height: 80%"><span>Fri</span><div class="bar-value">80%</div></div>
+              <div class="chart-bar" style="height: 70%"><span>Sat</span><div class="bar-value">70%</div></div>
+              <div class="chart-bar active" style="height: 90%"><span>Sun</span><div class="bar-value">90%</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Learn Section -->
+<div id="learnSection" class="section">
+  <div class="learn-container">
+    
+    <!-- Upload Area -->
+    <div class="upload-card" id="uploadCard">
+      <div class="card-header">
+        <h2>Upload Your Learning Material</h2>
+        <p>Upload a file to start your AI-powered learning experience</p>
+      </div>
+      
+      <div class="upload-area" id="uploadArea">
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.ppt,.pptx" />
+        <div class="upload-icon" id="uploadIcon">📄</div>
+        <div class="upload-title">Drop your file here or click to browse</div>
+        <div class="upload-subtitle">Supports PDF, Word, PowerPoint files</div>
+        <div class="file-types">
+          <span class="file-type">📄 PDF</span>
+          <span class="file-type">📝 Word</span>
+          <span class="file-type">📊 PowerPoint</span>
+        </div>
+      </div>
+      
+  <div class="file-info" id="fileInfo">
+  <div class="file-info-content">
+    <div class="file-details">
+      <span class="file-name-icon">📄</span>
+      <span id="fileName">document.pdf</span>
+    </div>
+    <button class="btn-remove" id="removeFileBtn">❌ Remove</button>
+  </div>
+</div>
+</div>
+
+    <!-- Learning Formats -->
+    <div class="learning-formats-card" id="learningFormatsCard">
+      <div class="card-header">
+        <h2>Choose Your Learning Format</h2>
+        <p>Select how you want to learn from your uploaded material</p>
+      </div>
+      
+      <div class="formats-grid">
+        <div class="format-card" data-format="image">
+          <span class="format-icon">🖼️</span>
+          <div class="format-name">AI Image Generation</div>
+          <div class="format-desc">Create AI-generated images and visuals</div>
+          <span class="format-badge active">Available</span>
+        </div> 
+        
+        <div class="format-card" data-format="summary">
+          <span class="format-icon">📋</span>
+          <div class="format-name">Smart Summary</div>
+          <div class="format-desc">Get key points and highlights</div>
+          <span class="format-badge active">Available</span>
+        </div>
+        
+<div class="format-card" data-format="video">
+  <span class="format-icon">🎬</span>
+  <div class="format-name">AI Video Generation</div>
+  <div class="format-desc">Generate educational videos with demonstrations</div>
+  <span class="format-badge active">Available</span>
+</div>
+
+<div class="format-card" data-format="podcast">
+  <span class="format-icon">🎙️</span>
+  <div class="format-name">AI Podcast</div>
+  <div class="format-desc">Listen to an AI-generated podcast discussion about your material</div>
+  <span class="format-badge active">Available</span>
+</div>
+
+        <div class="format-card" data-format="chat">
+          <span class="format-icon">💬</span>
+          <div class="format-name">AI Tutor Chat</div>
+          <div class="format-desc">Ask questions about your material</div>
+          <span class="format-badge active">Available</span>
+        </div>
+        
+        <div class="format-card" data-format="quiz" id="quizFormatCard">
+          <span class="format-icon">🧠 </span>
+          <div class="format-name">Interactive Quiz</div>
+          <div class="format-desc">Test your knowledge with questions</div>
+          <span class="format-badge active">Available</span>
+        </div>
+      </div>
+    </div>
+
+  <!-- Quiz Configuration -->
+<div class="quiz-config-card" id="quizConfigCard">
+  <div class="card-header">
+    <h2>Configure Your Quiz</h2>
+    <p>Customize the quiz settings to match your learning style</p>
+  </div>
+  
+  <!-- NEW: Question Source Selection -->
+  <div class="question-source-section">
+    <h3 class="source-section-title">📚 Question Source</h3>
+    <p class="source-section-subtitle">Choose where your quiz questions come from</p>
+    
+    <div class="source-options">
+      <div class="source-option-card selected" data-source="default">
+        <div class="source-icon">📖</div>
+        <div class="source-name">Default Questions</div>
+        <div class="source-desc">Use our pre-made question bank with various categories</div>
+        <div class="source-badge">Ready to Use</div>
+      </div>
+      
+      <div class="source-option-card" data-source="ai">
+        <div class="source-icon">🤖</div>
+        <div class="source-name">AI Generated</div>
+        <div class="source-desc">Generate questions based on your uploaded file content</div>
+        <div class="source-badge ai-badge">Powered by AI</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Selection (for default questions) -->
+  <div class="category-selection-section" id="categorySelectionSection">
+    <h3 class="config-section-title">🎯 Select Categories</h3>
+    <p class="config-section-subtitle">Choose topics you want to practice</p>
+    
+    <div class="category-grid">
+      <label class="category-checkbox">
+        <input type="checkbox" checked data-category="all" id="categoryAll" />
+        <span class="category-label">
+          <span class="category-icon">🌍</span>
+          <span class="category-text">All Categories</span>
+          <span class="category-count" id="countAll">50 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Geography" />
+        <span class="category-label">
+          <span class="category-icon">🌍</span>
+          <span class="category-text">Geography</span>
+          <span class="category-count" id="countGeography">8 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Science" />
+        <span class="category-label">
+          <span class="category-icon">🔬</span>
+          <span class="category-text">Science</span>
+          <span class="category-count" id="countScience">12 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Technology" />
+        <span class="category-label">
+          <span class="category-icon">💻</span>
+          <span class="category-text">Technology</span>
+          <span class="category-count" id="countTechnology">7 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="History" />
+        <span class="category-label">
+          <span class="category-icon">📜</span>
+          <span class="category-text">History</span>
+          <span class="category-count" id="countHistory">4 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Math" />
+        <span class="category-label">
+          <span class="category-icon">➗</span>
+          <span class="category-text">Math</span>
+          <span class="category-count" id="countMath">8 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Art" />
+        <span class="category-label">
+          <span class="category-icon">🎨</span>
+          <span class="category-text">Art</span>
+          <span class="category-count" id="countArt">3 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Biology" />
+        <span class="category-label">
+          <span class="category-icon">🧬</span>
+          <span class="category-text">Biology</span>
+          <span class="category-count" id="countBiology">4 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Literature" />
+        <span class="category-label">
+          <span class="category-icon">📚</span>
+          <span class="category-text">Literature</span>
+          <span class="category-count" id="countLiterature">2 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Music" />
+        <span class="category-label">
+          <span class="category-icon">🎵</span>
+          <span class="category-text">Music</span>
+          <span class="category-count" id="countMusic">1 questions</span>
+        </span>
+      </label>
+      
+      <label class="category-checkbox">
+        <input type="checkbox" data-category="Sports" />
+        <span class="category-label">
+          <span class="category-icon">⚽</span>
+          <span class="category-text">Sports</span>
+          <span class="category-count" id="countSports">1 questions</span>
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <!-- AI Generation Info (for AI questions) -->
+  <div class="ai-generation-section" id="aiGenerationSection" style="display: none;">
+    <div class="ai-info-card">
+      <div class="ai-info-icon">🤖</div>
+      <div class="ai-info-content">
+        <h3>AI-Powered Question Generation</h3>
+        <p>Our AI will analyze your uploaded file and create custom questions based on the content. This ensures questions are perfectly tailored to your study material.</p>
+        <div class="ai-features">
+          <div class="ai-feature-item">
+            <span class="ai-feature-icon">✅</span>
+            <span>Content-specific questions</span>
+          </div>
+          <div class="ai-feature-item">
+            <span class="ai-feature-icon">✅</span>
+            <span>Adaptive difficulty</span>
+          </div>
+          <div class="ai-feature-item">
+            <span class="ai-feature-icon">✅</span>
+            <span>Key concept focus</span>
+          </div>
+          <div class="ai-feature-item">
+            <span class="ai-feature-icon">✅</span>
+            <span>Multiple question types</span>
+          </div>
+        </div>
+        <div class="ai-file-info">
+          <span class="ai-file-icon">📄</span>
+          <span class="ai-file-name" id="aiFileName">document.pdf</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="config-grid">
+    <div class="config-group">
+      <label class="config-label">Difficulty Level</label>
+      <div class="difficulty-btns">
+        <button class="difficulty-btn easy" data-difficulty="easy">
+          <span class="diff-icon">😊</span>
+          <span>Easy</span>
+        </button>
+        <button class="difficulty-btn medium selected" data-difficulty="medium">
+          <span class="diff-icon">😐</span>
+          <span>Medium</span>
+        </button>
+        <button class="difficulty-btn hard" data-difficulty="hard">
+          <span class="diff-icon">😤</span>
+          <span>Hard</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="config-group">
+      <label class="config-label">Time Per Question</label>
+      <select class="config-select" id="timePerQuestion">
+        <option value="10">10 seconds</option>
+        <option value="20" selected>20 seconds</option>
+        <option value="30">30 seconds</option>
+        <option value="60">1 minute</option>
+      </select>
+    </div>
+
+    <div class="config-group">
+      <label class="config-label">Number of Questions</label>
+      <input type="number" class="config-input" id="numQuestions" value="10" min="5" max="30" />
+    </div>
+
+    <div class="config-group full-width">
+      <label class="config-label">Question Types</label>
+      <div class="question-types">  
+        <label class="type-checkbox">
+          <input type="checkbox" checked data-type="multiple" />
+          <span class="checkbox-label">
+            <span class="check-icon">✓</span>
+            Multiple Choice
+          </span>
+        </label>
+        <label class="type-checkbox">
+          <input type="checkbox" data-type="truefalse" />
+          <span class="checkbox-label">
+            <span class="check-icon">✓</span>
+            True/False
+          </span>
+        </label>
+        <label class="type-checkbox">
+          <input type="checkbox" data-type="enumeration" />
+          <span class="checkbox-label">
+            <span class="check-icon">✓</span>
+            Enumeration
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-start-learning" id="startLearningBtn">
+    Start Learning Quiz →
+  </button>
+</div>
+
+  </div>
+</div>
+
+<!-- AI Image Generation Screen -->
+<div id="imageGenerationScreen" class="screen-overlay">
+  <div class="ai-content-container">
+    <button class="back-btn" id="backFromImageBtn">← Back</button>
+    <div class="ai-header">
+      <h1>🎨 AI Image Generation</h1>
+      <p>Visual representations of your learning material</p>
+    </div>
+    <div class="image-gallery" id="imageGallery">
+      <!-- Images will be generated here -->
+    </div>
+  </div>
+</div>
+
+<!-- Smart Summary Screen -->
+<div id="summaryScreen" class="screen-overlay">
+  <div class="ai-content-container">
+    <button class="back-btn" id="backFromSummaryBtn">← Back</button>
+    <div class="ai-header">
+      <h1>📋 Smart Summary</h1>
+      <p>Key points and highlights from your material</p>
+    </div>
+    <div class="summary-content" id="summaryContent">
+      <!-- Summary will be generated here -->
+    </div>
+  </div>
+</div>
+
+<!-- AI Tutor Chat Screen -->
+<div id="chatScreen" class="screen-overlay">
+  <div class="chat-container">
+    <div class="chat-header">
+      <button class="back-btn" id="backFromChatBtn">← Back</button>
+      <div class="chat-header-info">
+        <h2>💬 AI Tutor</h2>
+        <p>Ask me anything about your material</p>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message ai-message">
+        <div class="message-avatar">🤖</div>
+        <div class="message-content">
+          <p>Hello! I've analyzed your document and I'm ready to help you learn. Ask me anything about the content!</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Ask a question about your material..." />
+      <button class="btn-send" id="sendMessageBtn">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- AI Video Generation Screen -->
+<div id="videoGenerationScreen" class="screen-overlay">
+  <div class="ai-content-container">
+    <button class="back-btn" id="backFromVideoBtn">← Back</button>
+    <div class="ai-header">
+      <h1>🎬 AI Video Generation</h1>
+      <p>Watch step-by-step demonstrations for kinesthetic learning</p>
+    </div>
+    <div class="video-gallery" id="videoGallery">
+      <!-- Videos will be generated here -->
+    </div>
+  </div>
+</div>
+
+<!-- AI Podcast Screen -->
+<div id="podcastScreen" class="screen-overlay">
+  <div class="ai-content-container">
+    <button class="back-btn" id="backFromPodcastBtn">← Back</button>
+    <div class="ai-header">
+      <h1>🎙️ AI Podcast</h1>
+      <p>Listen to an engaging discussion about your learning material</p>
+    </div>
+    <div class="podcast-player-container">
+      <!-- Podcast Player Card -->
+      <div class="podcast-player-card">
+        <div class="podcast-cover">
+          <div class="podcast-cover-icon">🎙️</div>
+          <div class="podcast-pulse"></div>
+        </div>
+        
+        <div class="podcast-info">
+          <h2 class="podcast-title">Learning Insights Podcast</h2>
+          <p class="podcast-episode">Episode: Understanding <span id="podcastFileName">Your Material</span></p>
+          <p class="podcast-description">
+            Join our AI hosts as they discuss the key concepts, insights, and practical applications 
+            from your uploaded material. This conversational format helps reinforce learning through 
+            engaging dialogue and real-world examples.
+          </p>
+        </div>
+
+        <div class="podcast-controls">
+          <div class="podcast-timeline">
+            <div class="podcast-progress-bar">
+              <div class="podcast-progress-fill" id="podcastProgress"></div>
+              <div class="podcast-progress-handle" id="podcastHandle"></div>
+            </div>
+            <div class="podcast-time">
+              <span id="podcastCurrentTime">0:00</span>
+              <span id="podcastDuration">8:45</span>
+            </div>
+          </div>
+
+          <div class="podcast-buttons">
+            <button class="podcast-btn podcast-btn-secondary" id="podcastRewind">
+              <span>⏪</span>
+              <span class="btn-label">-15s</span>
+            </button>
+            
+            <button class="podcast-btn podcast-btn-primary" id="podcastPlayPause">
+              <span class="play-icon" id="podcastPlayIcon">▶️</span>
+            </button>
+            
+            <button class="podcast-btn podcast-btn-secondary" id="podcastForward">
+              <span>⏩</span>
+              <span class="btn-label">+15s</span>
+            </button>
+          </div>
+
+          <div class="podcast-features">
+            <button class="podcast-feature-btn" id="podcastSpeed">
+              <span class="feature-icon">⚡</span>
+              <span class="feature-text">Speed: <span id="speedValue">1x</span></span>
+            </button>
+            
+            <button class="podcast-feature-btn" id="podcastDownload">
+              <span class="feature-icon">⬇️</span>
+              <span class="feature-text">Download</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="podcast-topics">
+          <h3>📚 Topics Covered</h3>
+          <div class="topics-list">
+            <div class="topic-item">
+              <span class="topic-time">0:00</span>
+              <span class="topic-name">Introduction & Overview</span>
+            </div>
+            <div class="topic-item">
+              <span class="topic-time">1:30</span>
+              <span class="topic-name">Core Concepts Explained</span>
+            </div>
+            <div class="topic-item">
+              <span class="topic-time">4:15</span>
+              <span class="topic-name">Practical Applications</span>
+            </div>
+            <div class="topic-item">
+              <span class="topic-time">6:45</span>
+              <span class="topic-name">Key Takeaways & Summary</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="podcast-benefits">
+          <h3>🎧 Why Listen?</h3>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <span class="benefit-icon">🧠</span>
+              <span>Auditory Learning</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🚶</span>
+              <span>Learn On-The-Go</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">💬</span>
+              <span>Conversational Style</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🔄</span>
+              <span>Reinforces Memory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Game Section -->
+<div id="quizGameSection" class="section">
+  <div class="quiz-game-container">
+    
+    <!-- Create or Join -->
+    <div id="quizGameHome" class="quiz-home">
+      <div class="quiz-home-content">
+        <div class="quiz-logo">🎮</div>
+        <h1>Quiz Game Mode</h1>
+        <p>Create a game and compete with friends in real-time!</p>
+        
+        <div class="quiz-home-options">
+          <button class="btn-primary btn-large" id="createGameBtn">
+            <span class="btn-icon">➔</span>
+            Create Game
+          </button>
+          <button class="btn-secondary btn-large" id="joinGameBtn">
+            <span class="btn-icon">🏓</span>
+            Join Game
+          </button>
+        </div>
+      </div>
+      
+     <!-- Join Modal -->
+      <div id="joinModal" class="modal">
+        <div class="modal-content">
+          <h3>Join Game</h3>
+          <input type="text" id="playerNameInput" class="config-input" placeholder="Enter your name" maxlength="20" style="margin-bottom: 15px;" />
+          <input type="text" id="gamePinInput" class="pin-input" placeholder="000000" maxlength="6" />
+          <div class="modal-actions">
+            <button class="btn-secondary" id="cancelJoinBtn">Cancel</button>
+            <button class="btn-primary" id="submitPinBtn">Join Game</button>
+          </div>
+          <p id="pinError" class="error-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Lobby -->
+    <div id="gameLobby" class="game-lobby">
+      <button class="back-btn" id="backToGameHomeBtn">← Back</button>
+      
+      <div class="lobby-content">
+        <h2>Game Lobby</h2>
+        <div class="game-pin-display">
+          <span>Game PIN:</span>
+          <span class="pin-code" id="gamePin">123456</span>
+        </div>
+        
+        <!-- Host Join Section -->
+        <div class="host-join" id="hostJoinSection">
+          <h3>Enter Your Name (Host)</h3>
+          <input type="text" id="hostNameInput" placeholder="Enter your name" maxlength="20" />
+          <button class="btn-primary" id="hostJoinBtn">Join as Host</button>
+        </div>
+
+ <!-- Players Waiting Section -->
+        <div class="players-waiting" id="playersWaitingSection" style="display: none;">
+          <div class="host-info">
+            <h3>Host: <span id="hostNameDisplay"></span></h3>
+          </div>
+
+          <div class="players-section">
+            <h3>Players (<span id="playerCount">0</span>)</h3>
+            <div class="players-grid" id="playersGrid"></div>
+          </div>
+
+          <!-- Question Creation Section -->
+          <div class="question-creation-section">
+            <h3>📝 Create Questions (<span id="questionCountDisplay">0</span> created)</h3>
+            <p class="section-hint">Add at least 5 questions to start the game</p>
+            
+            <div class="question-form">
+              <div class="form-group">
+                <label>Question Type</label>
+                <select id="questionTypeSelect" class="config-select">
+                  <option value="multiple">Multiple Choice</option>
+                  <option value="truefalse">True/False</option>
+                  <option value="enumeration">Enumeration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Question</label>
+                <input type="text" id="questionInput" class="config-input" placeholder="Enter your question..." />
+              </div>
+
+              <div class="form-group" id="answersGroup">
+                <label>Answers</label>
+                <div id="answersInputs">
+                  <input type="text" class="config-input answer-input" placeholder="Answer 1" data-index="0" />
+                  <input type="text" class="config-input answer-input" placeholder="Answer 2" data-index="1" />
+                  <input type="text" class="config-input answer-input" placeholder="Answer 3" data-index="2" />
+                  <input type="text" class="config-input answer-input" placeholder="Answer 4" data-index="3" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Correct Answer (Select one)</label>
+                <div class="correct-answer-btns" id="correctAnswerBtns">
+                  <button class="correct-btn" data-index="0">1</button>
+                  <button class="correct-btn" data-index="1">2</button>
+                  <button class="correct-btn" data-index="2">3</button>
+                  <button class="correct-btn" data-index="3">4</button>
+                </div>
+              </div>
+
+              <button class="btn-add-question" id="addQuestionBtn">
+                <span>➔</span> Add Question
+              </button>
+            </div>
+
+            <!-- Questions List -->
+            <div class="created-questions" id="createdQuestionsList">
+              <!-- Questions will be added here -->
+            </div>
+          </div>
+
+          <button class="btn-start-game" id="startGameBtn" style="opacity: 0.5; cursor: not-allowed;">
+            Start Game (Need 5+ questions)
+          </button>
+        </div>
+</div>
+</div>
+  </div>
+</div>
+
+<!-- Skill Tree Section -->
+<div id="skillTreeSection" class="section">
+  <div class="skill-tree-container">
+    <div class="skill-tree-header">
+      <h1>🌳 Skills & Achievements</h1>
+      <p>Complete achievements to earn skill points and unlock power-ups</p>
+      <div class="skill-points-display">
+        <span class="sp-label">Skill Points:</span>
+        <span class="sp-value" id="skillPoints">0</span>
+      </div>
+    </div>
+
+   <!-- Achievements Section -->
+    <div class="achievements-section">
+      <h2 class="section-title-small">🏅 Achievements</h2>
+      <p style="text-align: center; color: var(--text-light); font-weight: 600; margin-bottom: 30px;">
+        Complete challenges across three difficulty tiers to earn Skill Points
+      </p>
+      <div class="achievements-grid" id="achievementsGrid">
+        <!-- Achievements will be dynamically populated -->
+      </div>
+    </div>
+
+    <div class="skill-tree-content">
+      <!-- Power-up Branch -->
+      <div class="skill-branch">
+        <h2 class="branch-title">🏓 Power-up Shop</h2>
+        <div class="skills-grid">
+          <div class="skill-node locked" data-skill="extraFifty" data-cost="30">
+            <div class="skill-icon">🏓</div>
+            <div class="skill-name">Extra 50/50</div>
+            <div class="skill-desc">Start with +1 50/50 power-up</div>
+            <div class="skill-owned">Owned: 0/5</div>
+            <div class="skill-cost">Cost: 30 SP</div>
+            <div class="skill-lock">🔑</div>
+          </div>
+          
+          <div class="skill-node locked" data-skill="extraFreeze" data-cost="40">
+            <div class="skill-icon">⏰</div>
+            <div class="skill-name">Extra Time Freeze</div>
+            <div class="skill-desc">Start with +1 Time Freeze</div>
+            <div class="skill-owned">Owned: 0/5</div>
+            <div class="skill-cost">Cost: 40 SP</div>
+            <div class="skill-lock">🔑</div>
+          </div>
+          
+          <div class="skill-node locked" data-skill="extraSkip" data-cost="50">
+            <div class="skill-icon">⭐</div>
+            <div class="skill-name">Extra Skip</div>
+            <div class="skill-desc">Start with +1 Skip power-up</div>
+            <div class="skill-owned">Owned: 0/5</div>
+            <div class="skill-cost">Cost: 50 SP</div>
+            <div class="skill-lock">🔑</div>
+          </div>
+          
+          <div class="skill-node locked" data-skill="extraDouble" data-cost="60">
+            <div class="skill-icon">💎</div>
+            <div class="skill-name">Extra 2x Points</div>
+            <div class="skill-desc">Start with +1 Double Points</div>
+            <div class="skill-owned">Owned: 0/5</div>
+            <div class="skill-cost">Cost: 60 SP</div>
+            <div class="skill-lock">🔑</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leaderboard Section -->
+<div id="leaderboardSection" class="section">
+  <div class="leaderboard-container">
+    <div class="leaderboard-header">
+      <h1>🏆 Global Leaderboard</h1>
+      <p>Top players from all quiz games</p>
+    </div>
+
+    <div class="leaderboard-filters">
+      <button class="filter-btn active" data-filter="all">All Time</button>
+      <button class="filter-btn" data-filter="today">Today</button>
+      <button class="filter-btn" data-filter="week">This Week</button>
+      <button class="filter-btn" data-filter="month">This Month</button>
+      <button class="filter-btn" data-filter="category">By Category</button>
+    </div>
+
+    <div class="leaderboard-content">
+      <!-- Empty State -->
+      <div class="leaderboard-empty" id="leaderboardEmpty" style="display: none;">
+        <div class="empty-icon">🎮</div>
+        <h3>No Players Yet!</h3>
+        <p id="emptyMessage">Be the first to play and claim the top spot!</p>
+        <button class="btn-primary" id="startPlayingBtn">Start Playing</button>
+      </div>
+
+      <!-- Category Selector (hidden by default) -->
+      <div class="category-selector" id="categorySelector" style="display: none;">
+        <h3>Select Category</h3>
+        <div class="category-pills">
+          <button class="category-pill active" data-category="all">All Categories</button>
+          <button class="category-pill" data-category="Geography">🌍 Geography</button>
+          <button class="category-pill" data-category="Science">🔬 Science</button>
+          <button class="category-pill" data-category="Technology">💻 Technology</button>
+          <button class="category-pill" data-category="History">📊 History</button>
+          <button class="category-pill" data-category="Math">⚙️ Math</button>
+        </div>
+      </div>
+
+      <!-- Top 3 Podium -->
+      <div class="podium" id="podiumSection">
+        <div class="podium-place second">
+          <div class="podium-avatar" id="second-avatar">👤</div>
+          <div class="podium-name" id="second-name">No Player</div>
+          <div class="podium-score" id="second-score">0</div>
+          <div class="podium-rank">2</div>
+        </div>
+        <div class="podium-place first">
+          <div class="podium-crown">🦸</div>
+          <div class="podium-avatar" id="first-avatar">👤</div>
+          <div class="podium-name" id="first-name">No Player</div>
+          <div class="podium-score" id="first-score">0</div>
+          <div class="podium-rank">1</div>
+        </div>
+        <div class="podium-place third">
+          <div class="podium-avatar" id="third-avatar">👤</div>
+          <div class="podium-name" id="third-name">No Player</div>
+          <div class="podium-score" id="third-score">0</div>
+          <div class="podium-rank">3</div>
+        </div>
+      </div>
+
+      <!-- Leaderboard List -->
+      <div class="leaderboard-list" id="leaderboardList">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Player Profile Modal -->
+<div id="playerProfileModal" class="modal-overlay">
+  <div class="profile-modal">
+    <button class="profile-close" id="closeProfileBtn">❌</button>
+    
+    <div class="profile-header">
+      <div class="profile-avatar" id="profileAvatar">👤</div>
+      <div class="profile-info">
+        <h2 id="profileName">Player Name</h2>
+        <div class="profile-rank-badge" id="profileRankBadge">#1 Global Rank</div>
+      </div>
+    </div>
+
+    <div class="profile-stats-grid">
+      <div class="profile-stat-card">
+        <div class="profile-stat-icon">🏆</div>
+        <div class="profile-stat-value" id="profileTotalScore">0</div>
+        <div class="profile-stat-label">Total Score</div>
+      </div>
+      
+      <div class="profile-stat-card">
+        <div class="profile-stat-icon">🎮</div>
+        <div class="profile-stat-value" id="profileGamesPlayed">0</div>
+        <div class="profile-stat-label">Games Played</div>
+      </div>
+      
+      <div class="profile-stat-card">
+        <div class="profile-stat-icon">✅</div>
+        <div class="profile-stat-value" id="profileAccuracy">0%</div>
+        <div class="profile-stat-label">Accuracy</div>
+      </div>
+      
+      <div class="profile-stat-card">
+        <div class="profile-stat-icon">🔥</div>
+        <div class="profile-stat-value" id="profileBestStreak">0</div>
+        <div class="profile-stat-label">Best Streak</div>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h3>📊 Performance by Category</h3>
+      <div class="category-performance" id="categoryPerformance">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h3>🏓 Recent Achievements</h3>
+      <div class="recent-achievements" id="recentAchievements">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h3>📈 Performance Trend</h3>
+      <div class="performance-trend">
+        <div class="trend-chart" id="trendChart">
+          <!-- Simple bar chart visualization -->
+          <div class="trend-bars">
+            <div class="trend-bar" style="height: 60%"><span>Mon</span></div>
+            <div class="trend-bar" style="height: 75%"><span>Tue</span></div>
+            <div class="trend-bar" style="height: 55%"><span>Wed</span></div>
+            <div class="trend-bar" style="height: 90%"><span>Thu</span></div>
+            <div class="trend-bar" style="height: 85%"><span>Fri</span></div>
+            <div class="trend-bar" style="height: 70%"><span>Sat</span></div>
+            <div class="trend-bar" style="height: 95%"><span>Sun</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Game Screen -->
+<div id="gameScreen" class="screen-overlay">
+  <div class="game-layout">
+    <div class="game-header">
+      <div class="question-counter">
+        <span id="currentQ">1</span>/<span id="totalQ">10</span>
+      </div>
+      <div class="timer-container">
+        <svg class="timer-ring" width="60" height="60">
+          <circle class="timer-ring-bg" cx="30" cy="30" r="26" />
+          <circle class="timer-ring-progress" cx="30" cy="30" r="26" id="timerCircle" />
+        </svg>
+        <div class="timer-text" id="timerText">20</div>
+      </div>
+      <div class="score-display">
+        <span class="score-label">Score</span>
+        <span class="score-value" id="gameScore">0</span>
+      </div>
+    </div>
+    
+    <div class="game-content">
+      <div class="question-area">
+        <div class="question-badge" id="questionBadge">Multiple Choice</div>
+        <h2 class="question-text" id="questionText">Loading question...</h2>
+      </div>
+      
+      <div class="answers-container" id="answersContainer"></div>
+    </div>
+
+    <!-- Power-ups -->
+    <div class="power-ups">
+      <button class="power-up" data-power="fifty" title="50/50 - Remove 2 wrong answers">
+        <span class="power-icon">🏓</span>
+        <span class="power-count" id="fifty-count">2</span>
+      </button>
+      <button class="power-up" data-power="freeze" title="Time Freeze - Add 10 seconds">
+        <span class="power-icon">⏰</span>
+        <span class="power-count" id="freeze-count">2</span>
+      </button>
+      <button class="power-up" data-power="skip" title="Skip Question">
+        <span class="power-icon">⭐</span>
+        <span class="power-count" id="skip-count">1</span>
+      </button>
+      <button class="power-up" data-power="double" title="2x Points - Double your next correct answer">
+        <span class="power-icon">💎</span>
+        <span class="power-count" id="double-count">1</span>
+      </button>
+    </div>
+
+    <!-- Power-up Notification -->
+    <div class="powerup-notification" id="powerupNotification">
+      <div class="powerup-icon" id="powerupIcon">🏓</div>
+      <div class="powerup-text" id="powerupText">50/50 Activated!</div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="game-exit-btn" id="exitGameBtn" title="Exit Game">
+      ❌
+    </button>
+  </div>
+</div>
+
+<!-- Feedback Screen -->
+<div id="feedbackScreen" class="screen-overlay">
+  <div class="feedback-content">
+    <div class="result-display">
+      <div class="result-icon" id="resultIcon">✓</div>
+      <h2 class="result-text" id="resultText">Correct!</h2>
+      <div class="result-points" id="resultPoints">+1000</div>
+      <div class="streak-display hidden" id="streakDisplay">
+        <span class="streak-icon">🔥</span>
+        <span class="streak-text">3 Streak!</span>
+      </div>
+    </div>
+    
+    <div class="answer-info">
+      <h3>Correct Answer</h3>
+      <p id="correctAnswer">Answer here</p>
+    </div>
+    
+    <div class="mini-leaderboard-section">
+      <h3>Current Rankings</h3>
+      <div id="miniLeaderboard"></div>
+    </div>
+
+    <button class="btn-next" id="nextQuestionBtn">
+      Next Question →
+    </button>
+  </div>
+</div>
+
+<!-- Results Screen -->
+<div id="resultsScreen" class="screen-overlay">
+  <div class="results-content">
+    <h1>🎊 Game Over!</h1>
+    
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-value" id="finalScore">0</div>
+        <div class="stat-label">Total Score</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">✅</div>
+        <div class="stat-value" id="correctCount">0</div>
+        <div class="stat-label">Correct</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-value" id="accuracyPercent">0%</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">🔥</div>
+        <div class="stat-value" id="bestStreak">0</div>
+        <div class="stat-label">Best Streak</div>
+      </div>
+    </div>
+
+    <!-- Achievements Unlocked -->
+    <div class="achievements-unlocked" id="achievementsUnlocked" style="display: none;">
+      <h3>🎉 Achievements Unlocked!</h3>
+      <div class="unlocked-achievements" id="unlockedAchievementsList"></div>
+    </div>
+
+    <!-- Skill Points Earned -->
+    <div class="skill-points-earned" id="skillPointsEarned">
+      <div class="sp-earned-icon">✨</div>  
+      <div class="sp-earned-text">
+        <h3>Skill Points Earned!</h3>
+        <div class="sp-earned-value">+<span id="earnedSP">0</span> SP</div>
+      </div>
+    </div>
+
+    <div class="final-leaderboard">
+      <h2>Final Rankings</h2>
+      <div id="finalLeaderboard"></div>
+    </div>
+    
+    <div class="results-actions">
+      <button class="btn-primary" id="playAgainBtn">Play Again</button>
+      <button class="btn-secondary" id="viewLeaderboardBtn">View Leaderboard</button>
+      <button class="btn-secondary" id="backToHomeBtn">Back to Home</button>
+    </div>
+  </div>
+</div>
+
+<div id="aboutDashboardModal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>📈 About Your Dashboard</h2>
+    <p>Your dashboard displays learning analytics including time spent, streak, activity history, and overall progress. Use it to track achievements and improve performance over time.</p>
+    <button id="closeDashboardModal" class="btn-close-modal">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
