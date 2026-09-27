@@ -1,35 +1,53 @@
-# INSPERSONA
+# INSPERSONA 🧠🎮
 
-An AI-powered website that helps students learn through interactive games and different learning formats. 
-
-This project was built as a prototype for a **Science Investigatory Project**, where it won **4th Place** 🏆. It was created in **2 weeks** using **Claude** and **ChatGPT**.
-
----
-
-## 💡 What it Does
-
-Students learn in different ways[cite: 1]. INSPERSONA tries to make studying easier and more fun by taking study materials and turning them into interactive tools[cite: 1]:
-
-* **Quiz Games:** Converts uploaded PDFs, Word docs, and PowerPoint files into interactive quizzes[cite: 1].
-* **Multiplayer Mode:** Host custom quiz games where friends can join using a game PIN[cite: 1].
-* **Power-Ups:** Strategic power-ups like 50/50, Time Freeze (+10s), Skip, and 2x Points[cite: 1].
-* **Skill Tree & Achievements:** Earn Skill Points (SP) by completing challenges to unlock extra power-ups[cite: 1, 2].
-* **AI Learning Tools:** Includes Smart Summaries, AI Tutor Chat, Video/Image mockups, and an AI Podcast player[cite: 1].
-* **Dashboard:** Tracks study streaks, quiz accuracy, and areas that need improvement[cite: 1, 2].
+> **Science Investigatory Project — 4th Place Awardee 🏆**  
+> An interactive, AI-powered learning platform designed to accommodate diverse student learning styles through gamified quizzes, visual media, interactive podcasts, and real-time multiplayer features.
 
 ---
 
-## 🛠️ Built With
+## 📌 Project Overview
 
-* HTML5[cite: 1]
-* CSS3[cite: 3]
-* JavaScript (Vanilla)[cite: 2]
-* Assisted by Claude & ChatGPT
+**Inspersona** was built to solve a core educational challenge: students process and retain information differently. Whether a student learns best through visual aids, listening, direct practice, or hands-on challenges, Inspersona bridges the gap by converting study materials into multiple interactive formats[cite: 1].
+
+This project was built over **2 weeks** as a prototype using **ChatGPT** and **Claude** for AI prototyping and assistance.
+
+### Key Highlights
+- 🏅 **Award-Winning Prototype:** Won 4th Place in a Science Investigatory Project competition.
+- ⏱️ **Development Time:** Built in 2 weeks.
+- 🎯 **Target Audience:** Students looking for adaptive, engaging, and personalized study tools[cite: 1].
 
 ---
 
-## 🚀 How to Run It
+## 🚀 Features & Learning Formats
 
-1. Download or clone this repository:
-   ```bash
-   git clone [https://github.com/your-username/inspersona.git](https://github.com/your-username/inspersona.git)
+Inspersona supports multiple learning preferences[cite: 1]:
+
+- 🧠 **AI-Powered & Custom Quizzes:** Generates dynamic questions directly from uploaded PDF, Word, or PowerPoint documents, or lets users build custom question sets[cite: 1].
+- 🎮 **Gamified Quiz Game Mode:** Live lobby system with PIN joining, custom host question creation, and interactive player matches[cite: 1].
+- 🏓 **Power-Up System:** Strategic gameplay elements including **50/50**, **Time Freeze (+10s)**, **Skip**, and **2x Points**[cite: 1].
+- 🌳 **Skill Tree & Achievements:** Tiered achievements (Easy, Hard, Impossible) that reward Skill Points (SP) to unlock power-up upgrades[cite: 1, 2].
+- 🎨 **Visual & Auditory AI Tools:**
+  - **Smart Summaries & AI Tutor Chat** for quick conceptual understanding[cite: 1].
+  - **AI Image & Video Generation** mockups for visual/kinesthetic learners[cite: 1].
+  - **AI Podcast Player** with timeline seeking, topic breakdowns, and playback speed control[cite: 1].
+- 📈 **Learning Analytics Dashboard:** Real-time streak tracking, study time calculations, weak area diagnostics, and score history[cite: 1, 2].
+- 🏆 **Global Leaderboard & Profiles:** Competitive rank standings across category-based performance[cite: 1].
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3 (CSS Variables, Flexbox/Grid, Animations), JavaScript (Vanilla ES6+)
+- **Typography:** Google Fonts (`Nunito`, `Poppins`)[cite: 1]
+- **State & Storage:** LocalStorage API for persistent data (Leaderboards, Achievements, Skill Points, Streaks)[cite: 2]
+- **AI Assist Tools:** Developed with Claude & ChatGPT
+
+---
+
+## 📁 Repository Structure
+
+```text
+.
+├── index.html   # Application structure, modal views, and screen overlays
+├── script.js    # Core state management, game engines, UI routers, and state logic
+└── styles.css   # Responsive layout rules, themes, animations, and component styles
