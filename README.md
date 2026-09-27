@@ -1,13 +1,13 @@
 # INSPERSONA 🧠🎮
 
 > **Science Investigatory Project — 4th Place Awardee 🏆**  
-> An interactive, AI-powered learning platform designed to accommodate diverse student learning styles through gamified quizzes, visual media, interactive podcasts, and real-time multiplayer features.
+> An interactive, AI-powered learning platform designed to accommodate diverse student learning styles through gamified quizzes, visual media, interactive podcasts, and real-time multiplayer features[cite: 1].
 
 ---
 
 ## 📌 Project Overview
 
-**Inspersona** was built to solve a core educational challenge: students process and retain information differently. Whether a student learns best through visual aids, listening, direct practice, or hands-on challenges, Inspersona bridges the gap by converting study materials into multiple interactive formats[cite: 1].
+**Inspersona** was built to solve a core educational challenge: students process and retain information differently[cite: 1]. Whether a student learns best through visual aids, listening, direct practice, or hands-on challenges, Inspersona bridges the gap by converting study materials into multiple interactive formats[cite: 1].
 
 This project was built over **2 weeks** as a prototype using **ChatGPT** and **Claude** for AI prototyping and assistance.
 
@@ -37,7 +37,7 @@ Inspersona supports multiple learning preferences[cite: 1]:
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3 (CSS Variables, Flexbox/Grid, Animations), JavaScript (Vanilla ES6+)
+- **Frontend:** HTML5[cite: 1], CSS3 (CSS Variables, Flexbox/Grid, Animations)[cite: 3], JavaScript (Vanilla ES6+)[cite: 2]
 - **Typography:** Google Fonts (`Nunito`, `Poppins`)[cite: 1]
 - **State & Storage:** LocalStorage API for persistent data (Leaderboards, Achievements, Skill Points, Streaks)[cite: 2]
 - **AI Assist Tools:** Developed with Claude & ChatGPT
@@ -51,3 +51,12 @@ Inspersona supports multiple learning preferences[cite: 1]:
 ├── index.html   # Application structure, modal views, and screen overlays
 ├── script.js    # Core state management, game engines, UI routers, and state logic
 └── styles.css   # Responsive layout rules, themes, animations, and component styles
+
+Project Team & Credits
+Developer: Flaubert D. Bihasa
+
+Research Paper Author: Ahmaree Camilo
+
+QA Tester: Reniel Dematera
+
+School: Blessed Regina Protmann Catholic School Inc.
